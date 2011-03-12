@@ -76,9 +76,6 @@ jQuery(document).ready(function($){
 				$tweet = $('<div/>').addClass('tweetBody');
 				$tweet.append($('<a/>').text(data.name).attr('href', 'http://twitter.com/' + data.screen_name).addClass('name'));
 				$tweet.append($('<p/>').text(data.text).addClass('text'));
-				//if(data.delta != '-'){
-				//	$tweet.append($('<p/>').text(data.delta + '秒まえ').addClass('delta'));
-				//}
 				
 				if(data.time_zone){
 					$tweet.append($('<p/>').text('from ' + data.time_zone).addClass('time_zone').css('font-size', '0.7em'));
